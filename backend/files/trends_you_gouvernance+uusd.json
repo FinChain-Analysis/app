@@ -1,0 +1,882 @@
+{
+  "search_metadata": {
+    "id": "65fde042c9de45dac3ff5147",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/e9c565ed822d020b/65fde042c9de45dac3ff5147.json",
+    "created_at": "2024-03-22 19:47:14 UTC",
+    "processed_at": "2024-03-22 19:47:14 UTC",
+    "google_trends_url": "https://trends.google.com/trends/api/explore?tz=420&req=%7B%22comparisonItem%22%3A%5B%7B%22keyword%22%3A%22uusd%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%22today+12-m%22%7D%2C%7B%22keyword%22%3A%22YOU+Governance%22%2C%22geo%22%3A%22%22%2C%22time%22%3A%22today+12-m%22%7D%5D%2C%22category%22%3A0%2C%22property%22%3A%22%22%2C%22userConfig%22%3A%22%7BuserType%3A+%5C%22USER_TYPE_LEGIT_USER%5C%22%7D%22%7D",
+    "raw_html_file": "https://serpapi.com/searches/e9c565ed822d020b/65fde042c9de45dac3ff5147.html",
+    "prettify_html_file": "https://serpapi.com/searches/e9c565ed822d020b/65fde042c9de45dac3ff5147.prettify",
+    "total_time_taken": 5.98
+  },
+  "search_parameters": {
+    "engine": "google_trends",
+    "q": "uusd,YOU Governance",
+    "date": "today 12-m",
+    "tz": "420",
+    "data_type": "TIMESERIES"
+  },
+  "interest_over_time": {
+    "timeline_data": [
+      {
+        "date": "Mar 19 – 25, 2023",
+        "timestamp": "1679184000",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "21",
+            "extracted_value": 21
+          },
+          {
+            "query": "YOU Governance",
+            "value": "95",
+            "extracted_value": 95
+          }
+        ]
+      },
+      {
+        "date": "Mar 26 – Apr 1, 2023",
+        "timestamp": "1679788800",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "23",
+            "extracted_value": 23
+          },
+          {
+            "query": "YOU Governance",
+            "value": "77",
+            "extracted_value": 77
+          }
+        ]
+      },
+      {
+        "date": "Apr 2 – 8, 2023",
+        "timestamp": "1680393600",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "22",
+            "extracted_value": 22
+          },
+          {
+            "query": "YOU Governance",
+            "value": "78",
+            "extracted_value": 78
+          }
+        ]
+      },
+      {
+        "date": "Apr 9 – 15, 2023",
+        "timestamp": "1680998400",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "17",
+            "extracted_value": 17
+          },
+          {
+            "query": "YOU Governance",
+            "value": "71",
+            "extracted_value": 71
+          }
+        ]
+      },
+      {
+        "date": "Apr 16 – 22, 2023",
+        "timestamp": "1681603200",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "19",
+            "extracted_value": 19
+          },
+          {
+            "query": "YOU Governance",
+            "value": "95",
+            "extracted_value": 95
+          }
+        ]
+      },
+      {
+        "date": "Apr 23 – 29, 2023",
+        "timestamp": "1682208000",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "25",
+            "extracted_value": 25
+          },
+          {
+            "query": "YOU Governance",
+            "value": "78",
+            "extracted_value": 78
+          }
+        ]
+      },
+      {
+        "date": "Apr 30 – May 6, 2023",
+        "timestamp": "1682812800",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "16",
+            "extracted_value": 16
+          },
+          {
+            "query": "YOU Governance",
+            "value": "87",
+            "extracted_value": 87
+          }
+        ]
+      },
+      {
+        "date": "May 7 – 13, 2023",
+        "timestamp": "1683417600",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "20",
+            "extracted_value": 20
+          },
+          {
+            "query": "YOU Governance",
+            "value": "92",
+            "extracted_value": 92
+          }
+        ]
+      },
+      {
+        "date": "May 14 – 20, 2023",
+        "timestamp": "1684022400",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "26",
+            "extracted_value": 26
+          },
+          {
+            "query": "YOU Governance",
+            "value": "77",
+            "extracted_value": 77
+          }
+        ]
+      },
+      {
+        "date": "May 21 – 27, 2023",
+        "timestamp": "1684627200",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "20",
+            "extracted_value": 20
+          },
+          {
+            "query": "YOU Governance",
+            "value": "65",
+            "extracted_value": 65
+          }
+        ]
+      },
+      {
+        "date": "May 28 – Jun 3, 2023",
+        "timestamp": "1685232000",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "20",
+            "extracted_value": 20
+          },
+          {
+            "query": "YOU Governance",
+            "value": "66",
+            "extracted_value": 66
+          }
+        ]
+      },
+      {
+        "date": "Jun 4 – 10, 2023",
+        "timestamp": "1685836800",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "19",
+            "extracted_value": 19
+          },
+          {
+            "query": "YOU Governance",
+            "value": "64",
+            "extracted_value": 64
+          }
+        ]
+      },
+      {
+        "date": "Jun 11 – 17, 2023",
+        "timestamp": "1686441600",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "26",
+            "extracted_value": 26
+          },
+          {
+            "query": "YOU Governance",
+            "value": "58",
+            "extracted_value": 58
+          }
+        ]
+      },
+      {
+        "date": "Jun 18 – 24, 2023",
+        "timestamp": "1687046400",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "19",
+            "extracted_value": 19
+          },
+          {
+            "query": "YOU Governance",
+            "value": "50",
+            "extracted_value": 50
+          }
+        ]
+      },
+      {
+        "date": "Jun 25 – Jul 1, 2023",
+        "timestamp": "1687651200",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "20",
+            "extracted_value": 20
+          },
+          {
+            "query": "YOU Governance",
+            "value": "47",
+            "extracted_value": 47
+          }
+        ]
+      },
+      {
+        "date": "Jul 2 – 8, 2023",
+        "timestamp": "1688256000",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "17",
+            "extracted_value": 17
+          },
+          {
+            "query": "YOU Governance",
+            "value": "52",
+            "extracted_value": 52
+          }
+        ]
+      },
+      {
+        "date": "Jul 9 – 15, 2023",
+        "timestamp": "1688860800",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "16",
+            "extracted_value": 16
+          },
+          {
+            "query": "YOU Governance",
+            "value": "57",
+            "extracted_value": 57
+          }
+        ]
+      },
+      {
+        "date": "Jul 16 – 22, 2023",
+        "timestamp": "1689465600",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "15",
+            "extracted_value": 15
+          },
+          {
+            "query": "YOU Governance",
+            "value": "48",
+            "extracted_value": 48
+          }
+        ]
+      },
+      {
+        "date": "Jul 23 – 29, 2023",
+        "timestamp": "1690070400",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "7",
+            "extracted_value": 7
+          },
+          {
+            "query": "YOU Governance",
+            "value": "55",
+            "extracted_value": 55
+          }
+        ]
+      },
+      {
+        "date": "Jul 30 – Aug 5, 2023",
+        "timestamp": "1690675200",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "19",
+            "extracted_value": 19
+          },
+          {
+            "query": "YOU Governance",
+            "value": "50",
+            "extracted_value": 50
+          }
+        ]
+      },
+      {
+        "date": "Aug 6 – 12, 2023",
+        "timestamp": "1691280000",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "19",
+            "extracted_value": 19
+          },
+          {
+            "query": "YOU Governance",
+            "value": "67",
+            "extracted_value": 67
+          }
+        ]
+      },
+      {
+        "date": "Aug 13 – 19, 2023",
+        "timestamp": "1691884800",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "33",
+            "extracted_value": 33
+          },
+          {
+            "query": "YOU Governance",
+            "value": "67",
+            "extracted_value": 67
+          }
+        ]
+      },
+      {
+        "date": "Aug 20 – 26, 2023",
+        "timestamp": "1692489600",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "34",
+            "extracted_value": 34
+          },
+          {
+            "query": "YOU Governance",
+            "value": "67",
+            "extracted_value": 67
+          }
+        ]
+      },
+      {
+        "date": "Aug 27 – Sep 2, 2023",
+        "timestamp": "1693094400",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "22",
+            "extracted_value": 22
+          },
+          {
+            "query": "YOU Governance",
+            "value": "79",
+            "extracted_value": 79
+          }
+        ]
+      },
+      {
+        "date": "Sep 3 – 9, 2023",
+        "timestamp": "1693699200",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "25",
+            "extracted_value": 25
+          },
+          {
+            "query": "YOU Governance",
+            "value": "99",
+            "extracted_value": 99
+          }
+        ]
+      },
+      {
+        "date": "Sep 10 – 16, 2023",
+        "timestamp": "1694304000",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "18",
+            "extracted_value": 18
+          },
+          {
+            "query": "YOU Governance",
+            "value": "87",
+            "extracted_value": 87
+          }
+        ]
+      },
+      {
+        "date": "Sep 17 – 23, 2023",
+        "timestamp": "1694908800",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "23",
+            "extracted_value": 23
+          },
+          {
+            "query": "YOU Governance",
+            "value": "96",
+            "extracted_value": 96
+          }
+        ]
+      },
+      {
+        "date": "Sep 24 – 30, 2023",
+        "timestamp": "1695513600",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "27",
+            "extracted_value": 27
+          },
+          {
+            "query": "YOU Governance",
+            "value": "94",
+            "extracted_value": 94
+          }
+        ]
+      },
+      {
+        "date": "Oct 1 – 7, 2023",
+        "timestamp": "1696118400",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "19",
+            "extracted_value": 19
+          },
+          {
+            "query": "YOU Governance",
+            "value": "79",
+            "extracted_value": 79
+          }
+        ]
+      },
+      {
+        "date": "Oct 8 – 14, 2023",
+        "timestamp": "1696723200",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "25",
+            "extracted_value": 25
+          },
+          {
+            "query": "YOU Governance",
+            "value": "84",
+            "extracted_value": 84
+          }
+        ]
+      },
+      {
+        "date": "Oct 15 – 21, 2023",
+        "timestamp": "1697328000",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "27",
+            "extracted_value": 27
+          },
+          {
+            "query": "YOU Governance",
+            "value": "86",
+            "extracted_value": 86
+          }
+        ]
+      },
+      {
+        "date": "Oct 22 – 28, 2023",
+        "timestamp": "1697932800",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "22",
+            "extracted_value": 22
+          },
+          {
+            "query": "YOU Governance",
+            "value": "67",
+            "extracted_value": 67
+          }
+        ]
+      },
+      {
+        "date": "Oct 29 – Nov 4, 2023",
+        "timestamp": "1698537600",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "20",
+            "extracted_value": 20
+          },
+          {
+            "query": "YOU Governance",
+            "value": "56",
+            "extracted_value": 56
+          }
+        ]
+      },
+      {
+        "date": "Nov 5 – 11, 2023",
+        "timestamp": "1699142400",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "23",
+            "extracted_value": 23
+          },
+          {
+            "query": "YOU Governance",
+            "value": "100",
+            "extracted_value": 100
+          }
+        ]
+      },
+      {
+        "date": "Nov 12 – 18, 2023",
+        "timestamp": "1699747200",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "23",
+            "extracted_value": 23
+          },
+          {
+            "query": "YOU Governance",
+            "value": "70",
+            "extracted_value": 70
+          }
+        ]
+      },
+      {
+        "date": "Nov 19 – 25, 2023",
+        "timestamp": "1700352000",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "20",
+            "extracted_value": 20
+          },
+          {
+            "query": "YOU Governance",
+            "value": "58",
+            "extracted_value": 58
+          }
+        ]
+      },
+      {
+        "date": "Nov 26 – Dec 2, 2023",
+        "timestamp": "1700956800",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "24",
+            "extracted_value": 24
+          },
+          {
+            "query": "YOU Governance",
+            "value": "66",
+            "extracted_value": 66
+          }
+        ]
+      },
+      {
+        "date": "Dec 3 – 9, 2023",
+        "timestamp": "1701561600",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "24",
+            "extracted_value": 24
+          },
+          {
+            "query": "YOU Governance",
+            "value": "53",
+            "extracted_value": 53
+          }
+        ]
+      },
+      {
+        "date": "Dec 10 – 16, 2023",
+        "timestamp": "1702166400",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "23",
+            "extracted_value": 23
+          },
+          {
+            "query": "YOU Governance",
+            "value": "74",
+            "extracted_value": 74
+          }
+        ]
+      },
+      {
+        "date": "Dec 17 – 23, 2023",
+        "timestamp": "1702771200",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "25",
+            "extracted_value": 25
+          },
+          {
+            "query": "YOU Governance",
+            "value": "48",
+            "extracted_value": 48
+          }
+        ]
+      },
+      {
+        "date": "Dec 24 – 30, 2023",
+        "timestamp": "1703376000",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "19",
+            "extracted_value": 19
+          },
+          {
+            "query": "YOU Governance",
+            "value": "35",
+            "extracted_value": 35
+          }
+        ]
+      },
+      {
+        "date": "Dec 31, 2023 – Jan 6, 2024",
+        "timestamp": "1703980800",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "25",
+            "extracted_value": 25
+          },
+          {
+            "query": "YOU Governance",
+            "value": "38",
+            "extracted_value": 38
+          }
+        ]
+      },
+      {
+        "date": "Jan 7 – 13, 2024",
+        "timestamp": "1704585600",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "25",
+            "extracted_value": 25
+          },
+          {
+            "query": "YOU Governance",
+            "value": "55",
+            "extracted_value": 55
+          }
+        ]
+      },
+      {
+        "date": "Jan 14 – 20, 2024",
+        "timestamp": "1705190400",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "21",
+            "extracted_value": 21
+          },
+          {
+            "query": "YOU Governance",
+            "value": "71",
+            "extracted_value": 71
+          }
+        ]
+      },
+      {
+        "date": "Jan 21 – 27, 2024",
+        "timestamp": "1705795200",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "25",
+            "extracted_value": 25
+          },
+          {
+            "query": "YOU Governance",
+            "value": "81",
+            "extracted_value": 81
+          }
+        ]
+      },
+      {
+        "date": "Jan 28 – Feb 3, 2024",
+        "timestamp": "1706400000",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "24",
+            "extracted_value": 24
+          },
+          {
+            "query": "YOU Governance",
+            "value": "79",
+            "extracted_value": 79
+          }
+        ]
+      },
+      {
+        "date": "Feb 4 – 10, 2024",
+        "timestamp": "1707004800",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "22",
+            "extracted_value": 22
+          },
+          {
+            "query": "YOU Governance",
+            "value": "87",
+            "extracted_value": 87
+          }
+        ]
+      },
+      {
+        "date": "Feb 11 – 17, 2024",
+        "timestamp": "1707609600",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "23",
+            "extracted_value": 23
+          },
+          {
+            "query": "YOU Governance",
+            "value": "93",
+            "extracted_value": 93
+          }
+        ]
+      },
+      {
+        "date": "Feb 18 – 24, 2024",
+        "timestamp": "1708214400",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "24",
+            "extracted_value": 24
+          },
+          {
+            "query": "YOU Governance",
+            "value": "84",
+            "extracted_value": 84
+          }
+        ]
+      },
+      {
+        "date": "Feb 25 – Mar 2, 2024",
+        "timestamp": "1708819200",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "33",
+            "extracted_value": 33
+          },
+          {
+            "query": "YOU Governance",
+            "value": "96",
+            "extracted_value": 96
+          }
+        ]
+      },
+      {
+        "date": "Mar 3 – 9, 2024",
+        "timestamp": "1709424000",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "27",
+            "extracted_value": 27
+          },
+          {
+            "query": "YOU Governance",
+            "value": "83",
+            "extracted_value": 83
+          }
+        ]
+      },
+      {
+        "date": "Mar 10 – 16, 2024",
+        "timestamp": "1710028800",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "27",
+            "extracted_value": 27
+          },
+          {
+            "query": "YOU Governance",
+            "value": "75",
+            "extracted_value": 75
+          }
+        ]
+      },
+      {
+        "date": "Mar 17 – 23, 2024",
+        "timestamp": "1710633600",
+        "values": [
+          {
+            "query": "uusd",
+            "value": "26",
+            "extracted_value": 26
+          },
+          {
+            "query": "YOU Governance",
+            "value": "78",
+            "extracted_value": 78
+          }
+        ]
+      }
+    ],
+    "averages": [
+      {
+        "query": "uusd",
+        "value": 22
+      },
+      {
+        "query": "YOU Governance",
+        "value": 72
+      }
+    ]
+  }
+}
