@@ -87,8 +87,10 @@ async def _():
         
         return good_articles_count / total_articles
 
+
     async with aiohttp.ClientSession() as session:
-        urlCrypto = f"https://cryptopanic.com/api/v1/posts/?auth_token={os.environ["CRYPTOPANIC_AUTH"]}&currencies=BTC,ETH,XRP&filter=hot"
+        urlCrypto = f"https://cryptopanic.com/api/v1/posts/?auth_token={os.environ["CRYPTOPANIC_AUTH"]}&currencies=XTZ&filter=hot"
+        
         response = await session.get(urlCrypto)
         data = await response.json()
 

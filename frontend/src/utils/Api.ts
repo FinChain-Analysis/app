@@ -6,6 +6,15 @@ enum Name {
     "youves-you-governance" = "YOU"
 }
 
+export interface FeelingArticle {
+    title: string
+}
+
+export interface FeelingResponse {
+    score: number
+    latestArticles: FeelingArticle[]
+}
+
 export default class Api {
     /**
      * get price informations
@@ -40,6 +49,11 @@ export default class Api {
 
     static async getGeoMapTrends() {
         return await fetch(import.meta.env.VITE_API_URL + "/trends/geomap/you_gouvernance+uusd")
+            .then((response) => response.json());
+    }
+
+    static async getFeeling(): Promise<FeelingResponse> {
+        return await fetch(import.meta.env.VITE_API_URL + "/feeling")
             .then((response) => response.json());
     }
 }
