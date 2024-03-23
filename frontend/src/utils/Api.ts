@@ -37,4 +37,9 @@ export default class Api {
         return await fetch(import.meta.env.VITE_API_URL + "/trends/interest_over_time/you_gouvernance+uusd")
             .then((response) => response.json());
     }
+
+    static async getGeoMapTrends() {
+        return await fetch(import.meta.env.VITE_API_URL + "/trends/geomap/you_gouvernance+uusd")
+            .then((response) => response.json());
+    }
 }
