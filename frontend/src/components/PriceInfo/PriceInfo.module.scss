@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+
+    .price-info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+
+            img {
+                height: 2rem;
+            }
+
+            h3 {}
+
+            .price {}
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .info-item {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h4 {}
+
+                span {}
+            }
+        }
+    }
+}
