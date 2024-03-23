@@ -4,27 +4,13 @@ import style from './GoogleTrends.module.scss';
 import { Line } from 'react-chartjs-2';
 import {
     Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend,
     ChartOptions,
-    PointElement,
-    LineElement
+    registerables
 } from 'chart.js';
+import { CURVE_COLOR, SECOND_CURVE_COLOR } from '../../const';
+import 'chartjs-adapter-date-fns';
 
-ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend,
-    PointElement,
-    LineElement
-);
+ChartJS.register(...registerables);
 
 function GoogleTrends() {
     const [trends, setTrends] = useState<any>(undefined);
@@ -39,19 +25,48 @@ function GoogleTrends() {
         fetchTrends();
     }, []);
 
-    const labels = Array.from({ length: 53 }, (_, i) => (i + 1).toString());
-
-    console.log(trends);
-
     const data = {
-        labels: labels,
         datasets: trends?.interest_over_time.averages.map((a: any, i: number) => ({
             label: a.query,
-            data: trends.interest_over_time.timeline_data.map((t: any) => t.values[i].value),
+            data: trends.interest_over_time.timeline_data.map((t: any) => ({ x: new Date(t.timestamp * 1000), y: t.values[i].value })),
         })) ?? [],
     };
 
-    const options: ChartOptions<"line"> = {};
+    const options: ChartOptions<"line"> = {
+        borderColor: [CURVE_COLOR, SECOND_CURVE_COLOR] as any,
+        elements: {
+            point: {
+                radius: 0,
+            },
+        },
+        scales: {
+            x: {
+                border: {
+                    display: false,
+                },
+                grid: {
+                    display: false,
+                },
+                type: 'time',
+                time: {
+                    unit: 'month',
+                    displayFormats: {
+                        month: 'MMM. yyyy',
+                    },
+                    tooltipFormat: 'PP',
+                },
+                ticks: {
+                    maxTicksLimit: 6,
+                }
+            },
+            y: {
+                border: {
+                    display: false,
+                    dash: [2, 5],
+                },
+            }
+        }
+    };
 
     return (
         <section className={style.container} id='google-trends'>
