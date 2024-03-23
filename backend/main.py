@@ -93,6 +93,6 @@ async def _():
         data = await response.json()
 
         return {
-            "lastestArticles": data["results"][:5],
-            "score": calculate_feeling_score(data["results"])
+            "score": calculate_feeling_score(data["results"]),
+            "lastestArticles": data["results"][:5]
         }
