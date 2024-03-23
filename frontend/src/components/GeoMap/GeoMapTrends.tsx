@@ -39,10 +39,8 @@ const GeoMapTrends = () => {
 
 
     return (
-        <ComposableMap projectionConfig={{ rotate: [0, 0, 0], scale: 147 }}>
-            <Sphere stroke="#E4E5E6" strokeWidth={0.5} />
-            {/* <Graticule stroke="#E4E5E6" strokeWidth={0.5} /> */}
-
+        <ComposableMap projectionConfig={{ rotate: [0, 0, 0], scale: 147 }} style={{ minWidth: "50%", height: "480px" }}>
+            <Sphere stroke="#E4E5E6" strokeWidth={0.5} id={""} fill={"transparent"} />
             {
                 countriesData.length > 0 &&
                 (

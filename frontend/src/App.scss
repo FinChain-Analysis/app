@@ -3,10 +3,21 @@
     flex-direction: column;
     gap: 20px;
 
+    .sentiment-price {
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+        align-items: center;
+
+        svg {
+            height: 185px !important;
+        }
+    }
+
     .trends {
         display: flex;
 
-        >* {
+        > * {
             flex: 1;
             padding: 10px;
         }
