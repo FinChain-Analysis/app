@@ -51,16 +51,16 @@ const SentimentalAnalysis = () => {
 };
 
 function getLabel(score: number) {
-    if (score < 20) {
+    if (score < 0.2) {
         return "😱"
     }
-    else if (score < 40) {
+    else if (score < .4) {
         return "🫤"
     }
-    else if (score < 60) {
+    else if (score < .6) {
         return "😑"
     }
-    else if (score < 80) {
+    else if (score < .8) {
         return "😁"
     }
     else {
