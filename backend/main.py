@@ -54,11 +54,13 @@ async def _():
 
 @app.get("/trends/interest_over_time/you_gouvernance+uusd")
 async def _():
+    # This is the output from SERP Api. But we are limited to 100 req/month. So we made the request and save it to a .json.
     with open("files/trends/interest_over_time/you_gouvernance+uusd.json") as f:
         return json.load(f)
     
 @app.get("/trends/geomap/you_gouvernance+uusd")
 async def _():
+    # This is the output from SERP Api. But we are limited to 100 req/month. So we made the request and save it to a .json.
     with open("files/trends/geomap/you_gouvernance+uusd.json") as f:
         return json.load(f)
 
