@@ -22,7 +22,7 @@ const SentimentalAnalysis = () => {
         needleColor="gray"
         needleTransitionDuration={3000}
         needleTransition={Transition.easeElastic}
-        currentValueText={feelingData != undefined ? getLabel(feelingData) : "⭕"}
+        currentValueText={feelingData != undefined ? getLabel(feelingData.score) : "⭕"}
         customSegmentLabels={[
             {
                 text: '😱',

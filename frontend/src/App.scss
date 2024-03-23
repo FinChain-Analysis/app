@@ -2,4 +2,13 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    .trends {
+        display: flex;
+
+        >* {
+            flex: 1;
+            padding: 10px;
+        }
+    }
 }
