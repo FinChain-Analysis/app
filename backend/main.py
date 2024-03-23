@@ -1,8 +1,11 @@
 import aiohttp
 import json
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
 
+load_dotenv()
 
 app = FastAPI()
 
@@ -53,3 +56,36 @@ async def _():
 async def _():
     with open("files/trends_you_gouvernance+uusd.json") as f:
         return json.load(f)
+
+@app.get("/feeling")
+async def _():
+
+    def is_article_good(article):
+        votes = article["votes"]
+
+        good = votes["positive"]+votes["saved"]
+        bad = votes["disliked"]+votes["negative"]+votes["toxic"]
+
+        if good>bad:
+            return True
+        else:
+            return False        
+
+    def calculate_feeling_score(articles):
+        total_articles = len(articles)
+        if total_articles == 0:
+            return 0  # Avoid division by zero        
+
+        good_articles_count = sum(1 for article in articles if is_article_good(article))
+        
+        return good_articles_count / total_articles
+
+    async with aiohttp.ClientSession() as session:
+        urlCrypto = f"https://cryptopanic.com/api/v1/posts/?auth_token={os.environ["CRYPTOPANIC_AUTH"]}&currencies=BTC,ETH,XRP&filter=hot"
+        response = await session.get(urlCrypto)
+        data = await response.json()
+
+        return {
+            "lastestArticles": data["results"][:5],
+            "score": calculate_feeling_score(data["results"])
+        }
