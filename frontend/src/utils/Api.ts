@@ -34,7 +34,7 @@ export default class Api {
      * @returns {Promise<any>}
      */
     static async getTrends() {
-        return await fetch(import.meta.env.VITE_API_URL + "/trends")
+        return await fetch(import.meta.env.VITE_API_URL + "/trends/interest_over_time/you_gouvernance+uusd")
             .then((response) => response.json());
     }
 }
