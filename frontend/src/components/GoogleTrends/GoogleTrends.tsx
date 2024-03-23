@@ -7,7 +7,7 @@ import {
     ChartOptions,
     registerables
 } from 'chart.js';
-import { CURVE_COLOR, SECOND_CURVE_COLOR } from '../../const';
+import { CURVE_COLOR, SECOND_CURVE_COLOR, TEXT_COLOR } from '../../const';
 import 'chartjs-adapter-date-fns';
 
 ChartJS.register(...registerables);
@@ -33,6 +33,8 @@ function GoogleTrends() {
     };
 
     const options: ChartOptions<"line"> = {
+        responsive: true,
+        color: TEXT_COLOR,
         borderColor: [CURVE_COLOR, SECOND_CURVE_COLOR] as any,
         elements: {
             point: {
@@ -57,6 +59,7 @@ function GoogleTrends() {
                 },
                 ticks: {
                     maxTicksLimit: 6,
+                    color: TEXT_COLOR,
                 }
             },
             y: {
@@ -64,6 +67,9 @@ function GoogleTrends() {
                     display: false,
                     dash: [2, 5],
                 },
+                ticks: {
+                    color: TEXT_COLOR,
+                }
             }
         }
     };
