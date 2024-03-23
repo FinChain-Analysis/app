@@ -52,9 +52,14 @@ async def _():
 
         return result
 
-@app.get("/trends")
+@app.get("/trends/interest_over_time/you_gouvernance+uusd")
 async def _():
-    with open("files/trends_you_gouvernance+uusd.json") as f:
+    with open("files/trends/interest_over_time/you_gouvernance+uusd.json") as f:
+        return json.load(f)
+    
+@app.get("/trends/geomap/you_gouvernance+uusd")
+async def _():
+    with open("files/trends/geomap/you_gouvernance+uusd.json") as f:
         return json.load(f)
 
 @app.get("/feeling")
