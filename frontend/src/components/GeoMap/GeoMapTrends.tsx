@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { scaleLinear } from "d3-scale";
 import {
     ComposableMap,
     Geographies,
     Geography,
-    Sphere,
-    Graticule
+    Sphere
 } from "react-simple-maps";
 import Api from "../../utils/Api";
-import { CURVE_COLOR, SECOND_CURVE_COLOR } from "../../const";
+import { CURVE_COLOR, SECOND_CURVE_COLOR, TEXT_COLOR } from "../../const";
 import { getCountryISO3 } from "../../utils/iso-code";
 
 interface CountryValue {
@@ -40,7 +39,7 @@ const GeoMapTrends = () => {
 
     return (
         <ComposableMap projectionConfig={{ rotate: [0, 0, 0], scale: 147 }} style={{ minWidth: "50%", height: "480px" }}>
-            <Sphere stroke="#E4E5E6" strokeWidth={0.5} id={""} fill={"transparent"} />
+            <Sphere stroke={TEXT_COLOR} strokeWidth={0.5} id={""} fill={"transparent"} />
             {
                 countriesData.length > 0 &&
                 (
