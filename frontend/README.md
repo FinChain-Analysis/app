@@ -1,4 +1,4 @@
-# ?
+# FinChain Analytics Frontend
 
 ## Installation
 
