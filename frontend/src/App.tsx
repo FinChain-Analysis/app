@@ -1,4 +1,4 @@
-import './App.scss'
+import './style/App.scss'
 import GeoMapTrends from './components/GeoMap/GeoMapTrends'
 import GoogleTrends from './components/GoogleTrends/GoogleTrends'
 import PriceInfo from './components/PriceInfo/PriceInfo'
