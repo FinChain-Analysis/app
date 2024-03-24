@@ -1,26 +1,13 @@
 import { PriceInformation } from "../Types/PriceInformation";
-
-enum Name {
-    tezos = "XTZ",
-    "youves-uusd" = "UUSD",
-    "youves-you-governance" = "YOU"
-}
-
-export interface FeelingArticle {
-    title: string
-}
-
-export interface FeelingResponse {
-    score: number
-    latestArticles: FeelingArticle[]
-}
+import { FeelingResponse } from "../Types/FeelingResponse";
+import { Name } from "../Types/Name";
 
 export default class Api {
     /**
      * get price informations
      * @returns {Promise<PriceInformation[]>}
      */
-    static async getPriceInformation() {
+    static async getPriceInformation(): Promise<PriceInformation[]> {
         const data: any = await fetch(import.meta.env.VITE_API_URL + "/price")
             .then((response) => response.json());
 
@@ -42,16 +29,24 @@ export default class Api {
      * Get trends informations
      * @returns {Promise<any>}
      */
-    static async getTrends() {
+    static async getTrends(): Promise<any> {
         return await fetch(import.meta.env.VITE_API_URL + "/trends/interest_over_time/you_gouvernance+uusd")
             .then((response) => response.json());
     }
 
-    static async getGeoMapTrends() {
+    /**
+     * Get geo map trends
+     * @returns {Promise<any>}
+     */
+    static async getGeoMapTrends(): Promise<any> {
         return await fetch(import.meta.env.VITE_API_URL + "/trends/geomap/you_gouvernance+uusd")
             .then((response) => response.json());
     }
 
+    /**
+     * Get feeling informations
+     * @returns {Promise<FeelingResponse>}
+     */
     static async getFeeling(): Promise<FeelingResponse> {
         return await fetch(import.meta.env.VITE_API_URL + "/feeling")
             .then((response) => response.json());
