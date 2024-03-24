@@ -17,3 +17,7 @@ npm run dev
 ```bash
 npm run build
 ```
+
+# Demo
+
+![demo](docs/demo.png "Title")
