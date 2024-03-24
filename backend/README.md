@@ -6,6 +6,11 @@
 pip install -r requirements.txt && pip install uvicorn gunicorn
 ```
 
+### Third Parties Auth
+
+The backend is using third parties API that need a auth key.
+Create `.env` file containing `CRYPTOPANIC_AUTH` & `SERP_API_KEY`
+
 ## Start
 
 ```bash
