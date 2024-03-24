@@ -116,3 +116,12 @@ async def _():
             "score": calculate_feeling_score(data["results"]),
             "lastestArticles": data["results"][:5]
         }
+
+
+@app.on_event("startup")
+async def startup_event():
+    if "CRYPTOPANIC_AUTH" not in os.environ:
+        raise Exception("Missing CRYPTOPANIC_AUTH in env")
+
+    if "SERP_API_KEY" not in os.environ:
+        raise Exception("Missing SERP_API_KEY in env")
