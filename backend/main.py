@@ -47,7 +47,7 @@ async def _():
 
             else:
                 print(
-                    f"\nPas d'informations trouvées pour le token: {token_id}")
+                    f"\nNo information found for the token: {token_id}")
 
         return result
 
