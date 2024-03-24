@@ -55,17 +55,29 @@ async def _():
 @app.get("/trends/interest_over_time/you_gouvernance+uusd")
 async def _():
     """Return the interest over time for the last 12 months."""
-    # This is the output from SERP Api. But we are limited to 100 req/month. So we made the request and save it to a .json.
-    with open("files/trends/interest_over_time/you_gouvernance+uusd.json") as f:
-        return json.load(f)
+    token_ids = "you-governance,uusd"
+    url = f"https://serpapi.com/search?engine=google_trends&google_domain=google.com&api_key={
+        os.environ['SERP_API_KEY']}&q={token_ids}&hl=en&gl=us&category=0&time_period=12m"
+
+    async with aiohttp.ClientSession() as session:
+        response = await session.get(url)
+        data = await response.json()
+
+        return data
 
 
 @app.get("/trends/geomap/you_gouvernance+uusd")
 async def _():
     """Return the interest by region for the last 12 months."""
-    # This is the output from SERP Api. But we are limited to 100 req/month. So we made the request and save it to a .json.
-    with open("files/trends/geomap/you_gouvernance+uusd.json") as f:
-        return json.load(f)
+    token_ids = "you-governance,uusd"
+    url = f"https://serpapi.com/search?engine=google_trends&google_domain=google.com&api_key={
+        os.environ['SERP_API_KEY']}&q={token_ids}&hl=en&gl=us&category=0&time_period=12m&explore=true"
+
+    async with aiohttp.ClientSession() as session:
+        response = await session.get(url)
+        data = await response.json()
+
+        return data
 
 
 @app.get("/feeling")
