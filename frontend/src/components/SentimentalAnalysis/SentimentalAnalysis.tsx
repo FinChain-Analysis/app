@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import Api, { FeelingResponse } from "../../utils/Api";
+import Api from "../../utils/Api";
+import { FeelingResponse } from "../../Types/FeelingResponse";
 import ReactSpeedometer, { CustomSegmentLabelPosition, Transition } from "react-d3-speedometer"
 
 

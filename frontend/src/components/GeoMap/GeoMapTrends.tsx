@@ -20,9 +20,9 @@ interface CountryData {
     values: CountryValue[];
 }
 
-const colorScale = scaleLinear()
+const colorScale = scaleLinear<number>()
     .domain([0, 100])
-    .range([CURVE_COLOR, SECOND_CURVE_COLOR]);
+    .range([CURVE_COLOR, SECOND_CURVE_COLOR] as Iterable<number>);
 
 const GeoMapTrends = () => {
     const [countriesData, setCountriesData] = useState<CountryData[]>([]);
@@ -58,7 +58,7 @@ const GeoMapTrends = () => {
                                     <Geography
                                         key={geo.rsmKey}
                                         geography={geo}
-                                        fill={fill}
+                                        fill={fill as string}
                                         stroke="#efedf0"
                                     />
                                 );
