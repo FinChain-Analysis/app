@@ -1,0 +1,2 @@
+- `client` is the frontend
+- `server` is the backend
